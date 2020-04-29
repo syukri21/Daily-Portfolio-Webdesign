@@ -229,8 +229,22 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
 }
 
+.upper-footer .container .subscription-wrapper {
+    padding-top: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .upper-footer .container {
+        flex-direction: row;
+    }
+
+    .upper-footer .container .subscription-wrapper {
+        padding-top: 0;
+    }
+}
 .upper-footer h1 {
     margin-bottom: 10px;
     font-size: 24px;
@@ -263,5 +277,5 @@ footer {
 .subscription-wrapper label {
     position: absolute;
     right: 20px;
-    color: #253340;
+    color: #4749a0;
 }
