@@ -211,3 +211,57 @@ body {
 .article:nth-child(even) {
     background-color: #e8e5e4;
 }
+
+/* Footer */
+
+footer {
+    margin-top: 40px;
+    background-color: #e8e5e4;
+    min-height: 200px;
+}
+
+.upper-footer {
+    background: #eee;
+    padding: 40px;
+}
+
+.upper-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-footer h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.upper-footer input {
+    border: none;
+    width: 380px;
+    min-height: 30px;
+    padding: 10px;
+    border: 1px #e8e5e4 solid;
+    border-radius: 4px;
+}
+.upper-footer input:focus {
+    outline: none;
+}
+
+.upper-footer svg {
+    width: 24px;
+    height: 24px;
+}
+
+.subscription-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.subscription-wrapper label {
+    position: absolute;
+    right: 20px;
+    color: #253340;
+}
