@@ -38,6 +38,7 @@ body {
 .container {
     max-width: 1080px;
     margin: auto;
+    padding: 0px 10px;
 }
 
 /* Navbar */
@@ -49,14 +50,74 @@ body {
 .navbar-inner {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 20px 0px;
 }
 
-.navbar-inner span {
+.navbar-inner div span {
     margin-left: 20px;
     cursor: pointer;
 }
 
 .navbar-inner span:hover {
     color: #bababa;
+}
+
+/* Main */
+
+.main {
+    background: #eee;
+}
+
+.main-inner {
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-inner div * {
+    position: relative;
+    z-index: 5;
+    margin-top: 20px;
+}
+
+.main-inner h1 {
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.main-inner h2 {
+    font-weight: 600;
+    color: #262626;
+    font-size: 28px;
+}
+
+.main-inner p {
+    max-width: 600px;
+    line-height: 1.2rem;
+    font-size: 14px;
+}
+
+.main-inner .profile-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* Button */
+
+.button {
+    border: none;
+    background: #010007;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #5f5f5f;
 }
