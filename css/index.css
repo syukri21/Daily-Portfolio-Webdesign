@@ -51,3 +51,12 @@ body {
     justify-content: space-between;
     padding: 10px 0px;
 }
+
+.navbar-inner span {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.navbar-inner span:hover {
+    color: #bababa;
+}
