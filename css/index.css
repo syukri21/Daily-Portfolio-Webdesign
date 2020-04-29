@@ -36,7 +36,7 @@ body {
 }
 
 .container {
-    max-width: 1080px;
+    max-width: 80vw;
     margin: auto;
     padding: 0px 10px;
 }
@@ -124,10 +124,14 @@ body {
 
 /* Content */
 
+.content {
+    margin: 10px 0px;
+}
+
 .content-head {
     display: flex;
     justify-content: center;
-    padding: 20px 0px;
+    padding: 40px 0px;
 }
 
 .content-head span {
@@ -144,4 +148,34 @@ body {
 
 .content-head span:not(:first-child) {
     margin-left: 20px;
+}
+
+/* Boxes */
+
+.article-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    /* Define Auto Row size */
+    grid-auto-rows: 300px;
+    /*Define our columns */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+.article {
+    border-radius: 4px;
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article:nth-child(odd) {
+    background-color: #aed3de;
+}
+
+.article:nth-child(even) {
+    background-color: #e8e5e4;
 }
