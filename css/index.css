@@ -53,6 +53,16 @@ body {
     padding: 20px 0px;
 }
 
+.main-inner img {
+    opacity: 0.7;
+}
+
+@media only screen and (min-width: 1180px) {
+    .main-inner img {
+        opacity: 1;
+    }
+}
+
 .navbar-inner div span {
     margin-left: 20px;
     cursor: pointer;
@@ -60,6 +70,28 @@ body {
 
 .navbar-inner span:hover {
     color: #bababa;
+}
+
+.navitem {
+    display: none;
+}
+
+.navicon {
+    display: block;
+}
+
+.navicon {
+    width: 14px;
+    height: 14px;
+}
+
+@media only screen and (min-width: 600px) {
+    .navitem {
+        display: block;
+    }
+    .navicon {
+        display: none;
+    }
 }
 
 /* Main */
