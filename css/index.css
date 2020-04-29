@@ -279,3 +279,39 @@ footer {
     right: 20px;
     color: #4749a0;
 }
+
+/* down-footer */
+
+.down-footer {
+    display: grid;
+    max-width: 80vw;
+    margin: auto;
+    padding: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1em;
+    font-size: 14px;
+}
+
+.down-footer div {
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+}
+
+.down-footer div:first-child {
+    /* align-items: center; */
+    text-align: start;
+    justify-content: flex-start;
+}
+
+.down-footer li:not(:first-child) {
+    margin-top: 10px;
+}
+
+.down-footer li {
+    cursor: pointer;
+}
+
+.down-footer li:hover {
+    color: gray;
+}
