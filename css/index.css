@@ -176,6 +176,7 @@ body {
 
 .content-head span.active {
     font-weight: bolder;
+    border-bottom: 2px black solid;
 }
 
 .content-head span:not(:first-child) {
