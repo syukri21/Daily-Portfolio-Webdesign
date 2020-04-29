@@ -121,3 +121,27 @@ body {
 .button:hover {
     background: #5f5f5f;
 }
+
+/* Content */
+
+.content-head {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.content-head span {
+    cursor: pointer;
+}
+
+.content-head span:hover {
+    color: #5f5f5f;
+}
+
+.content-head span.active {
+    font-weight: bolder;
+}
+
+.content-head span:not(:first-child) {
+    margin-left: 20px;
+}
