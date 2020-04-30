@@ -100,43 +100,91 @@ body {
     background: #eee;
 }
 
-.main-inner {
+#content {
     min-height: 480px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     overflow: hidden;
+    flex-direction: column;
 }
 
-.main-inner div * {
+@media only screen and (min-width: 600px) {
+    #content {
+        flex-direction: row;
+    }
+}
+
+#content div h1,
+h2,
+h3,
+p,
+button {
     position: relative;
     z-index: 5;
     margin-top: 20px;
 }
 
-.main-inner h1 {
+#content h1 {
     font-weight: bolder;
     font-size: 48px;
 }
 
-.main-inner h2 {
+#content h2 {
     font-weight: 600;
     color: #262626;
     font-size: 28px;
 }
 
-.main-inner p {
-    max-width: 600px;
+#content p {
+    max-width: 400px;
     line-height: 1.2rem;
     font-size: 14px;
 }
 
-.main-inner .profile-img {
+#content .profile-img {
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: 1;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+    background-color: #aed3de;
+    margin: auto;
+}
+
+.identity {
+    display: flex;
+}
+
+.identity div:last-child {
+    font-weight: bolder;
+}
+
+.identity div {
+    margin: 0 10px;
+}
+
+.identity div {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.identity div span {
+    margin-top: 10px;
 }
 
 /* Button */
@@ -278,7 +326,7 @@ footer {
 .subscription-wrapper label {
     position: absolute;
     right: 20px;
-    color: #4749a0;
+    color: #aed3de;
 }
 
 /* down-footer */
