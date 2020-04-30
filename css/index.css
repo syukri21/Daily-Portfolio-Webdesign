@@ -63,12 +63,12 @@ body {
     }
 }
 
-.navbar-inner div span {
+.navbar-inner nav a {
     margin-left: 20px;
     cursor: pointer;
 }
 
-.navbar-inner span:hover {
+.navbar-inner a:hover {
     color: #bababa;
 }
 
